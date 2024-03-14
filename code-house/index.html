@@ -1,47 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | GitHub user search app</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-
   <body>
-
-  <div class="container mt-5">
-      <div class="pg-header">
-        <h3>devfinder</h3>
-        <h6> Light Dark</h6>
+    <header>
+      <div>devfinder</div>
+      <div class="light-dark mode">
+        <button
+          type="button"
+          class="color-mode__btn light--hidden"
+          aria-label="Toggle light mode"
+        >
+          LIGHT
+          <img src="assets/icon-sun.svg" alt="sun" />
+        </button>
+        <button
+          type="button"
+          class="color-mode__btn dark--hidden"
+          aria-label="toggle dark mode"
+        >
+          DARK
+          <img src="assets/icon-moon.svg" alt="moon" />
+        </button>
       </div>
-  <div class="content-container">
-    <nav class="navbar">
-      <form id = "form" class="d-flex" role="search">
-        <div class = "form-control" id = "inputContainer" class="w-100">
-          <div class="search-icon"></div>
-          <input class="custom-input" type="search" placeholder="Search Github username_" id="username" aria-label="Search">
-          <button class="search-button" type="submit" id="searchButton">Search</button>
+    </header>
+
+    <div class="search-box">
+      <div class="search-content">
+        <img src="assets/icon-search.svg" alt="" />
+        <input
+          type="search"
+          placeholder="Search Github username_"
+          id="userInput"
+          aria-label="Search"
+        />
+      </div>
+      <div class="btn-search-box">
+        <div class="btn-search">Search</div>
+      </div>
+    </div>
+
+    <div class="github-info-card">
+      <div class="card-header">
+        <div class="avatar">
+          <!-- <img src="assets/avatar.svg" alt="avatar" /> -->
         </div>
-      </form>
-  </nav>
+          <div class="github-header-box">
+            <div class="github-user">Github User</div>
+            <div class="github-username"><a href="#">@githubUsername</a></div>
+            <div class="join-date">Joined Date</div>
+          </div>
+        
+      </div>
+      <div class="github-info-box">
+        <div class="bio"></div>
+        <div class="github-stats">
+          <div class="repos">
+            <div class="repo-heading">Reps</div>
+            <div class="repo-count">0</div>
+          </div>
+          <div class="followers">
+            <div class="followers-heading">Followers</div>
+            <div class="followers" 0></div>
+          </div>
+          <div class="following">
+            <div class="following-heading">Following</div>
+            <div class="following-count">0</div>
+          </div>
+        </div>
   
-  <div class="card-container">
-    <div class="card-body">
-        <div class="avatar-container">
-          <img src="/code-house/assets/avatar.svg" alt="avatar" id="avatar">
+        <div class="socials-box">
+          <div class="location">
+            <img src="assets/icon-location.svg" alt="" />
+            <p>Location</p>
+          </div>
+          <div class="twitter">
+            <img src="assets/icon-twitter.svg" alt="" />
+            <p>Twitter</p>
+          </div>
+          <div class="website">
+            <img src="assets/icon-website.svg" alt="" />
+            <p>Website</p>
+          </div>
+          <div class="company">
+            <img src="assets/icon-company.svg" alt="" />
+            <p>Company</p>
+          </div>
         </div>
-      
-  </div>
-  </div>
-  </div>
-  </div>
-  <script src="main.js"></script>
-</body>
+      </div>
+
+
+    </div>
+
+    
+
+    <script src="main.js"></script>
+  </body>
 </html>
