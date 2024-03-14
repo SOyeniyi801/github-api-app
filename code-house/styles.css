@@ -111,7 +111,7 @@ header {
 .search-content input {
     margin-left: 20px;
     height: 100%;
-    width: 500px;
+    width: 420px;
     border: none;
     outline: none;
     font-size: 18px;
@@ -136,6 +136,15 @@ header {
     font-size: 16px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color:#60ABFF;
+}
+
+#noResults {
+    color: #F74646;
+    font-size: 15px;
 }
 
 .github-info-card {
