@@ -4,19 +4,20 @@
 }
 
 /* Light Mode */
-:root[ color-mode ='light']{
+:root {
     --body-bg-color: #f6f8ff;
     --head-color: #222731;
     --darklight-color: #697c9a;
     --search-bg-color: #fff;
     --search-color: #4b6a9b;
+    --social-color: #4B6A9B;
     --black: #000;
     --folow-color: #4b6a9b;
     --followTotal-color: #2b3442;
 }
 
 /* Dark Mode */
-:root[ color-mode = 'dark']{
+/* :root[ color-mode = 'dark']{
     --body-bg-color: #141d2f;
     --head-color: #fff;
     --darklight-color: #fff;
@@ -26,7 +27,7 @@
     --folow-color: #fff;
     --followTotal-color: #fff;
     --social-color: #fff
-}
+} */
 
 /* Universal Colors */
 :root{
@@ -55,7 +56,7 @@ header {
     margin-bottom: 25px;
 }
 
-.head{
+.heading{
     font-size: 26px;
     font-weight: bold;
     color: var(--head-color);
@@ -148,9 +149,100 @@ header {
     align-items: center;
 }
 
-.avatar {
+.avatar img {
     width: 117px;
     height: 117px;
     border: 1px solid var(--black);
     border-radius: 117px;
 }
+
+.github-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+    margin-top: 30px;
+}
+
+.github-header-box{
+    height: 100%;
+    width: 480px;
+    position: relative;
+}
+
+.join-date {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 15px;
+    color: var(--darklight-color);
+}
+
+.github-user {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--followTotal-color);
+}
+
+.github-username a {
+    color: var(--btn-color);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.github-info-box {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bio {
+    width: 480px;
+    height: 25px;
+    color: var(--search-color);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.github-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 480px;
+    height: 85px;
+    background-color: var(--body-bg-color);
+    border-radius: 10px;
+}
+
+.stats-heading {
+    font-size: 13px;
+    color: var(--folow-color);
+}
+
+.stats-count {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--followTotal-color);
+}
+
+.socials-box {
+    display: grid;
+    grid-template-columns: 240px 240px;
+    row-gap: 1.2em;
+    color: var(--social-color);
+    margin-top: 30px;
+}
+
+.socials-content {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.socials-content img {
+    margin-right: 10px;
+}
+
+
+
