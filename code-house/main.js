@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchButton = document.getElementById("form");
-  searchButton.addEventListener("submit", (event) => {
+  searchButton.addEventListener("click", (event) => {
     fetchUserData(event);
   });
 });
@@ -26,9 +26,10 @@ async function fetchUserData(event) {
   document.getElementById("public_repos").textContent = data.public_repos;
   document.getElementById("followers").textContent = data.followers;
   document.getElementById("following").textContent = data.following;
-  document.getElementById("location").textContent = data.location;
-  document.getElementById("twitter").textContent =
-    data.twitter_username || "Not Available";
+  document.getElementById("location").textContent = data.location || "Not Available";
+  document.getElementById("twitter").textContent = data.twitter_username || "Not Available";
+  document.getElementById("website").textContent = data.website || "Not Available";
+  document.getElementById("company").textContent = data.company || "Not Available";
 
   return data;
 }
