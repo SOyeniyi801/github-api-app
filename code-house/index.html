@@ -23,18 +23,20 @@
   <body>
     <header>
       <div class="heading">devfinder</div>
-      <div class="light-dark mode">
+      <div class="light-dark">
         <button
           type="button"
-          class="color-mode__btn light--hidden"
-          aria-label="Toggle light mode"
+          class="color-mode__btn light"
+          id="light"
+          aria-label="toggle light mode"
         >
           LIGHT
           <img src="assets/icon-sun.svg" alt="sun" />
         </button>
         <button
           type="button"
-          class="color-mode__btn dark--hidden"
+          class="color-mode__btn dark"
+          id="dark"
           aria-label="toggle dark mode"
         >
           DARK
@@ -66,7 +68,7 @@
         </div>
           <div class="github-header-box">
               <div class="github-user" id="githubName">Github User</div>
-              <div class="github-username" id="login"><a href="#">@githubUsername</a></div>
+              <div class="github-username"><a href="#" target="_blank" id="login">@githubUsername</a></div>
             <div class="join-date" id="date">Joined Date</div>
           </div>
       </div>

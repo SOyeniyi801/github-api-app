@@ -4,7 +4,7 @@
 }
 
 /* Light Mode */
-:root {
+:root .lightMode {
     --body-bg-color: #f6f8ff;
     --head-color: #222731;
     --darklight-color: #697c9a;
@@ -17,7 +17,7 @@
 }
 
 /* Dark Mode */
-/* :root[ color-mode = 'dark']{
+.darkMode {
     --body-bg-color: #141d2f;
     --head-color: #fff;
     --darklight-color: #fff;
@@ -27,7 +27,7 @@
     --folow-color: #fff;
     --followTotal-color: #fff;
     --social-color: #fff
-} */
+}
 
 /* Universal Colors */
 :root{
@@ -62,14 +62,6 @@ header {
     color: var(--head-color);
 }
 
-:root[ color-mode ='light'] .light--hidden{
-    display: none;
-}
-
-:root[ color-mode ='light'] .dark--hidden{
-    display: none;
-}
-
 .color-mode__btn {
     font-size: 13px;
     outline: none;
@@ -86,6 +78,10 @@ header {
 .dark img, .light img {
     width: 20px;
     height: 20px;
+}
+
+.light {
+    display: none;
 }
 
 .search-box {
