@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   searchButton.addEventListener("click", (event) => {
     fetchUserData(event);
   });
+  userInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      fetchUserData(event);
+    }
+  });
 });
 
 async function fetchUserData(event) {
@@ -52,7 +57,6 @@ function toggleTheme() {
   const body = document.body;
   const lightMode = document.getElementById("light");
   const darkMode = document.getElementById("dark");
-  
 
   darkMode.addEventListener("click", () => {
     console.log("dark mode clicked");
