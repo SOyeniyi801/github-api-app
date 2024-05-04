@@ -250,4 +250,24 @@ header {
 }
 
 
+/* Media Queries */
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+    header {
+        width: 573px;
+    }
+
+    .search-box {
+        width: 573px;
+    }
+
+    .github-info-card {
+        width: 573px;
+    }
+    .btn-search-box {
+        margin-right: 50px;
+    }
+
+}
 
