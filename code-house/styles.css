@@ -1,273 +1,419 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Light Mode */
 :root .lightMode {
-    --body-bg-color: #f6f8ff;
-    --head-color: #222731;
-    --darklight-color: #697c9a;
-    --search-bg-color: #fff;
-    --search-color: #4b6a9b;
-    --social-color: #4B6A9B;
-    --black: #000;
-    --folow-color: #4b6a9b;
-    --followTotal-color: #2b3442;
+  --body-bg-color: #f6f8ff;
+  --head-color: #222731;
+  --darklight-color: #697c9a;
+  --search-bg-color: #fff;
+  --search-color: #4b6a9b;
+  --social-color: #4b6a9b;
+  --black: #000;
+  --folow-color: #4b6a9b;
+  --followTotal-color: #2b3442;
 }
 
 /* Dark Mode */
 .darkMode {
-    --body-bg-color: #141d2f;
-    --head-color: #fff;
-    --darklight-color: #fff;
-    --search-bg-color: #1e2a47;
-    --search-color: #fff;
-    --black: #fff;
-    --folow-color: #fff;
-    --followTotal-color: #fff;
-    --social-color: #fff
+  --body-bg-color: #141d2f;
+  --head-color: #fff;
+  --darklight-color: #fff;
+  --search-bg-color: #1e2a47;
+  --search-color: #fff;
+  --black: #fff;
+  --folow-color: #fff;
+  --followTotal-color: #fff;
+  --social-color: #fff;
 }
 
 /* Universal Colors */
-:root{
-    --btn-color: #0079ff;
+:root {
+  --btn-color: #0079ff;
 }
 
 body {
-    background-color: var(--body-bg-color);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Libre Franklin", sans-serif;
-    font-family: "Outfit", sans-serif;
-    font-family: "Red Hat Text", sans-serif;
-    font-family: "Space Mono", monospace;
+  background-color: var(--body-bg-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 730px;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 730px;
+  margin-bottom: 25px;
 }
 
-.heading{
-    font-size: 26px;
-    font-weight: bold;
-    color: var(--head-color);
+.heading {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--head-color);
 }
 
 .color-mode__btn {
-    font-size: 13px;
-    outline: none;
-    background-color: var(--body-bg-color);
-    border: none;
-    cursor: pointer;
-    color: var(--darklight-color);
-    display: flex;
-    align-items: center;
-    width: 78px;
-    justify-content: space-between;
+  font-size: 13px;
+  outline: none;
+  background-color: var(--body-bg-color);
+  border: none;
+  cursor: pointer;
+  color: var(--darklight-color);
+  display: flex;
+  align-items: center;
+  width: 78px;
+  justify-content: space-between;
 }
 
-.dark img, .light img {
-    width: 20px;
-    height: 20px;
+.dark img,
+.light img {
+  width: 20px;
+  height: 20px;
 }
 
 .light {
-    display: none;
+  display: none;
 }
 
 .search-box {
-    height: 69px;
-    width: 730px;
-    background-color: var(--search-bg-color);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 69px;
+  width: 730px;
+  background-color: var(--search-bg-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search-content {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .search-content img {
-    margin-left: 35px;
+  margin-left: 35px;
 }
 
 .search-content input {
-    margin-left: 20px;
-    height: 100%;
-    width: 420px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    color: var(--search-color);
-    background-color: var(--search-bg-color);
+  margin-left: 20px;
+  height: 100%;
+  width: 420px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: var(--search-color);
+  background-color: var(--search-bg-color);
 }
 
 ::placeholder {
-    color: var(--search-color);
-    opacity: 1;
+  color: var(--search-color);
+  opacity: 1;
 }
 
 .btn-search {
-    height: 50px;
-    width: 106px;
-    background-color:var(--btn-color);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 16px;
-    margin-right: 10px;
-    cursor: pointer;
+  height: 50px;
+  width: 106px;
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .btn-search:hover {
-    background-color:#60ABFF;
+  background-color: #60abff;
 }
 
 #noResults {
-    color: #F74646;
-    font-size: 15px;
+  color: #f74646;
+  font-size: 15px;
 }
 
 .github-info-card {
-    background-color: var(--search-bg-color);
-    width: 730px;
-    height: 419px;
-    border-radius: 15px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--search-bg-color);
+  width: 730px;
+  height: 419px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatar img {
-    width: 117px;
-    height: 117px;
-    border: 1px solid var(--black);
-    border-radius: 117px;
+  width: 117px;
+  height: 117px;
+  border: 1px solid var(--black);
+  border-radius: 117px;
 }
 
 .github-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 650px;
-    margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 650px;
+  margin-top: 30px;
 }
 
-.github-header-box{
-    height: 100%;
-    width: 480px;
-    position: relative;
+.github-header-box {
+  height: 100%;
+  width: 480px;
+  position: relative;
 }
 
 .join-date {
-    position: absolute;
-    top: 7px;
-    right: 0;
-    font-size: 15px;
-    color: var(--darklight-color);
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 15px;
+  color: var(--darklight-color);
 }
 
 .github-user {
-    font-size: 26px;
-    font-weight: bold;
-    color: var(--followTotal-color);
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--followTotal-color);
 }
 
 .github-username a {
-    color: var(--btn-color);
-    margin-top: 5px;
-    font-size: 16px;
+  color: var(--btn-color);
+  margin-top: 5px;
+  font-size: 16px;
 }
 
 .github-info-box {
-    width: 650px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .bio {
-    width: 480px;
-    height: 25px;
-    color: var(--search-color);
-    margin-top: -20px;
-    margin-bottom: 30px;
+  width: 480px;
+  height: 25px;
+  color: var(--search-color);
+  margin-top: -20px;
+  margin-bottom: 30px;
 }
 
 .github-stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 480px;
-    height: 85px;
-    background-color: var(--body-bg-color);
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 480px;
+  height: 85px;
+  background-color: var(--body-bg-color);
+  border-radius: 10px;
 }
 
 .stats-heading {
-    font-size: 13px;
-    color: var(--folow-color);
+  font-size: 13px;
+  color: var(--folow-color);
 }
 
 .stats-count {
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--followTotal-color);
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--followTotal-color);
 }
 
 .socials-box {
-    display: grid;
-    grid-template-columns: 240px 240px;
-    row-gap: 1.2em;
-    color: var(--social-color);
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: 240px 240px;
+  row-gap: 1.2em;
+  color: var(--social-color);
+  margin-top: 30px;
 }
+
+.socials-content {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.socials-content img {
+  margin-right: 10px;
+}
+
+/* Media Queries */
+
+/* Default styles */
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .color-mode__btn {
+    font-size: 12px;
+    width: 70px;
+  }
+
+  .search-box {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .search-content img {
+    margin-left: 15px;
+  }
+
+  .search-content input {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .btn-search {
+    font-size: 14px;
+  }
+
+  .github-info-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .github-card-header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .github-header-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .github-user {
+    font-size: 22px;
+  }
+
+  .github-username a {
+    font-size: 14px;
+  }
+
+  .bio {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .github-stats {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .socials-box {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: repeat(4, auto);
+    row-gap: 1.2em;
+    justify-content: center;
+}
+
 
 .socials-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 15px;
+    margin-right: 70px;
 }
 
 .socials-content img {
     margin-right: 10px;
 }
-
-
-/* Media Queries */
-
-/* Tablet */
-@media only screen and (max-width: 768px){
-    header {
-        width: 573px;
-    }
-
-    .search-box {
-        width: 573px;
-    }
-
-    .github-info-card {
-        width: 573px;
-    }
-    .btn-search-box {
-        margin-right: 50px;
-    }
-
 }
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 18px;
+  }
 
+  .color-mode__btn {
+    font-size: 10px;
+    width: 60px;
+  }
+
+  .search-content img {
+    margin-left: 10px;
+  }
+
+  .search-content input {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .btn-search {
+    font-size: 12px;
+  }
+
+  .github-card-header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .github-user {
+    font-size: 18px;
+  }
+
+  .github-username a {
+    font-size: 12px;
+  }
+
+  .bio {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .github-stats {
+    font-size: 12px;
+    margin-right: 50px;
+    width: 80%;
+  }
+
+  .socials-box {
+   margin-right: 40px;
+  }
+
+  .socials-content {
+    justify-content: center;
+  }
+
+  .socials-content img {
+    margin-right: 5px;
+  }
+}
